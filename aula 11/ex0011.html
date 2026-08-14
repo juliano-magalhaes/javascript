@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Nacionalidade</title>
+</head>
+<body>
+    <h1>Nascionalidade</h1>
+    <p>
+        <label for="nasc">Pais de origem</label>
+        <input type="text" name="nasc" id="nasc">
+        <input type="button" value="Consultar" id="c" onclick="consu()">
+    </p>
+    <p>Sua nascionaliadade é: <strong id="na"></strong></p>
+    
+    <script>
+        function consu() {
+             var n = document.querySelector('input#nasc')
+             var na = document.querySelector('strong#na')
+             if (n.value == 'Brasil') {
+                na.innerHTML = 'Você é brasileiro'
+                } else {
+                    na.innerHTML = 'Você é gringo'
+             }
+        }
+    </script>
+</body>
+</html>
