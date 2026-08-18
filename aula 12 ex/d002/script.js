@@ -18,18 +18,31 @@ function veri() {
                 img.setAttribute('src', 'menino.jpg')
             } else if (idade < 18) {
                 //adolescente
+                img.setAttribute('src','menino-adolescente.jpg')
             } else if (idade < 60) {
                 // adulto
+                img.setAttribute('src','adulto-homem.jpg')
             } else {
                 // idoso
+                img.setAttribute('src','idoso.jpg')
             }
                 
         } else if (fsex[1].checked) {
             gênero = 'Mulher'
+            if (idade >= 0 && idade < 12) {
+                //menina
+                img.setAttribute('src','menina.jpg')
+            } else if (idade < 18) {
+                //adoslecente
+                img.setAttribute('src','menina-adolescente.jpg')
+            } else if (idade < 60) {
+                img.setAttribute('src','adulta-mulher.jpg')
+            } else {
+                img.setAttribute('src','idosa.jpg')
+            }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
         res.appendChild(img)
-        
     }
 }
