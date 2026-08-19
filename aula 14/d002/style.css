@@ -7,8 +7,12 @@
 
 body {
     background: #0B2265;
-    text-align: center;
+   
     color: white;
+}
+
+h1, footer {
+    text-align: center;
 }
 
 section {
@@ -16,4 +20,8 @@ section {
     padding: 20px;
     border-radius: 8px;
     color: black;
+}
+
+div {
+    padding: 10px;
 }
